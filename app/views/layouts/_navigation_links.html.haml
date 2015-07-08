@@ -1,4 +1,14 @@
+%li.active
+  %a 首页
+%li
+  %a 产品
+%li
+  %a 案例
+%li
+  %a 报价
+%li
+  %a FAQ
 - if user_signed_in?
-  %li= link_to '登出', destroy_user_session_path, :method=>'delete'
+  %li= link_to '登出', destroy_user_session_path, :method=>'delete', class: 'btn btn-default'
 - else
-  %li= link_to '新浪微博登录', new_user_session_path
+  %li.nav= link_to '登录', new_user_session_path, class: 'btn btn-default'

@@ -1,5 +1,10 @@
 // import the CSS framework
 @import "bootstrap-sprockets";
+$navbar-default-bg: #FFFFFF;
+$navbar-default-link-hover-color: #0099FF;
+$navbar-default-link-hover-bg: #FFFFFF;
+$navbar-default-link-active-color:  #0099FF;
+$navbar-default-link-active-bg:  #FFFFFF;
 @import "bootstrap";
 
 // make all images responsive by default
@@ -7,6 +12,10 @@ img {
   @extend .img-responsive;
   margin: 0 auto;
   }
+.navbar-nav{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
@@ -38,7 +47,7 @@ main {
   background-color: #eee;
   padding-bottom: 80px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
+  margin-top: 80px; // accommodate the navbar
   }
 section {
   @extend .row;
